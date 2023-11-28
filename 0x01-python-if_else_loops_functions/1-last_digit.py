@@ -11,7 +11,7 @@ def last_digit(num):
 
 
 last_number = last_digit(number)
-print(last_number)
+
 if last_number > 5:
     print(f"Last digit of {number} is {last_number} and is greater than 5")
 elif last_number == 0:
