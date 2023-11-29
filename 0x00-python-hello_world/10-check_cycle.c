@@ -15,7 +15,7 @@ int check_cycle(listint_t *list)
 		{
 			return (1);
 		}
-		first = first->next
+		first = first->next;
 	}
-	return (0)
+	return (0);
 }
