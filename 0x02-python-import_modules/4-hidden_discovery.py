@@ -2,7 +2,8 @@
 
 
 if __name__ == "__main__":
-    module_names = dir('4-hidden_discovery.py')
+    from hidden_4 import *
+    module_names = dir()
     for s in module_names:
         if not s.startswith("__"):
             print("{}".format(s))
