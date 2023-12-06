@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 def search_replace(my_list, search, replace):
     count = 0
     for i in my_list:

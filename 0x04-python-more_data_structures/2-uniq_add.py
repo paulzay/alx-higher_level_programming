@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 def uniq_add(my_list=[]):
     total = 0
     nums = []
@@ -12,6 +13,3 @@ def uniq_add(my_list=[]):
         total += i
 
     return total
-
-if __name__ == "__main__":
-    uniq_add(my_list)
