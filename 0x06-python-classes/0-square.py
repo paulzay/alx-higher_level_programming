@@ -1,11 +1,13 @@
 #!/usr/bin/python3
+"""
+class that defines a squaare
+"""
 class Square(object):
     """
-    class Square
-
+    class that defines a squaare
     """
     def __init__(self):
         """
-        __init__ method with no args
+        initialize the class variables
         """
         pass
