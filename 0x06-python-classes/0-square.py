@@ -2,6 +2,8 @@
 """
 class that defines a squaare
 """
+
+
 class Square(object):
     """
     class that defines a squaare
