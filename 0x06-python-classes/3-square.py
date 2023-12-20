@@ -5,6 +5,9 @@ class defining a square
 
 
 class Square(object):
+    """
+    class that defines a squaare
+    """
     def __init__(self, size=0):
         """
         initialize class
@@ -17,5 +20,5 @@ class Square(object):
         self__size = size
 
     def area(self):
-        """Calculate area of square"""
+        """ Calculate area of square"""
         return self.__size ** 2
