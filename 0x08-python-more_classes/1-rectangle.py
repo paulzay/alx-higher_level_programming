@@ -13,19 +13,33 @@ class Rectangle:
         initialize variables
         Args arguments
         """
-        if type(width) is not int:
-            raise TypeError("width must be an integer")
-        if type(height) is not int:
-            raise TypeError("height must be an integer")
-        if width < 0:
-            raise ValueError("width must be >= 0")
-        if height < 0:
-            raise ValueError("height must be >= 0")
         self.__width = width
         self.__height = height
 
-    def width(self, value):
+    @property
+    def width(self):
+        """ width property """
         return self.__width
 
-    def height(self, value):
+    @property
+    def height(self):
+        """ height property """
         return self.__height
+
+    @width.setter
+    def width(self, value):
+        """ width setter """
+        if type(value) is not int:
+            raise TypeError("width must be an integer")
+        if value < 0:
+            raise ValueError("width must be >= 0")
+        self.__width = value
+
+    @height.setter
+    def height(self, value):
+        """ height setter """
+        if type(value) is not int:
+            raise TypeError("height must be an integer")
+        if value < 0:
+            raise ValueError("height must be >= 0")
+        self.__height = value
