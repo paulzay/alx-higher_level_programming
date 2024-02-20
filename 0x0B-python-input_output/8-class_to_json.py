@@ -5,4 +5,4 @@
 
 def class_to_json(obj):
     """function to return dict description"""
-    return obj.
+    return obj
