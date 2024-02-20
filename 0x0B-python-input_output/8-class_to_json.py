@@ -5,4 +5,5 @@
 
 def class_to_json(obj):
     """function to return dict description"""
-    return obj
+    if isinstance(obj, (list, dict, str, int, bool)):
+        return obj
