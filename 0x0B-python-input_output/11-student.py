@@ -12,11 +12,13 @@ class Student:
         self.age = age
 
     def to_json(self, attrs=None):
+        """function work desc"""
         if (type(attrs)) == list and all(type(i) == str for i in attrs):
             return {j: getattr(self, j) for j in attrs if hasattr(self, j)}
         else:
             return self.__dict__
 
     def reload_from_json(self, json):
+        """function work desc"""
         for i in json:
             self.__dict__.update({i: json[i]})
