@@ -9,12 +9,12 @@ class Square:
         """initialize data"""
         self.__size = size
         self.__position = position
-    
+ 
     @property
     def size(self):
         """size getter"""
         return self.__size
-    
+
     @size.setter
     def size(self, value):
         """size setter"""
