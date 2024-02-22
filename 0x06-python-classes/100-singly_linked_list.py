@@ -32,7 +32,7 @@ class Node:
 
 
 class SinglyLinkedList:
-
+    """singly linked list"""
     def __init__(self):
         pass
 
