@@ -36,8 +36,7 @@ class Rectangle(Base):
             raise TypeError("height must be an integer")
         elif value < 0:
             raise ValueError("height must be > 0")
-        else:
-            self.__height = value
+        self.__height = value
 
     @width.setter
     def width(self, value):
@@ -45,8 +44,7 @@ class Rectangle(Base):
             raise TypeError("width must be an integer")
         elif value < 0:
             raise ValueError("width must be > 0")
-        else:
-            self.__width = value
+        self.__width = value
     
     @y.setter
     def y(self, value):
@@ -69,4 +67,13 @@ class Rectangle(Base):
     def area(self):
         return self.__height * self.__width
 
+    def display(self):
+        if self.__width != 0 and self.__height != 0:
+            return ""
+        s = ""
+        for _ in range(self.__height):
+            s += "#" * self.__width + "\n"
+        return s.rstrip()
 
+    def __str__(self):
+        return "[Rectangle] {:d}/{:d} - {:d}/{:d}".format(self.__x, self.__y, self.__width, self.__height)
