@@ -39,7 +39,7 @@ class Rectangle(Base):
         """set height"""
         if type(value) is not int:
             raise TypeError("height must be an integer")
-        elif value < 0:
+        if value <= 0:
             raise ValueError("height must be > 0")
         self.__height = value
 
@@ -48,7 +48,7 @@ class Rectangle(Base):
         """set width"""
         if type(value) is not int:
             raise TypeError("width must be an integer")
-        elif value < 0:
+        if value <= 0:
             raise ValueError("width must be > 0")
         self.__width = value
 
@@ -57,10 +57,9 @@ class Rectangle(Base):
         """set y"""
         if type(value) is not int:
             raise TypeError("y must be an integer")
-        elif value < 0:
-            raise ValueError("y must be >= 0")
-        else:
-            self.__y = value
+        if value < 0:
+            raise ValueError("y must be >= 0")    
+        self.__y = value
 
     @x.setter
     def x(self, value):
@@ -69,8 +68,7 @@ class Rectangle(Base):
             raise TypeError("x must be an integer")
         elif value < 0:
             raise ValueError("x must be >= 0")
-        else:
-            self.__x = value
+        self.__x = value
 
     def area(self):
         """calculate area"""
@@ -89,3 +87,16 @@ class Rectangle(Base):
         """representation"""
         return "[Rectangle] {:d}/{:d} - {:d}/{:d} \
             ".format(self.__x, self.__y, self.__width, self.__height)
+
+    def update(self, *args, **kwargs):
+        """update function"""
+        if len(args) > 0:
+            self.id = args[0]
+            self.__width = args[1]
+            self.__height = args[2]
+            self.__x = args[3]
+            self.__y = args[4]
+    
+        else:
+            for j in kwargs:
+                print(j, kwargs[j])
