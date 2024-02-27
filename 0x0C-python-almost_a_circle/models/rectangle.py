@@ -106,6 +106,15 @@ class Rectangle(Base):
                 self.__x = args[3]
             if len(args) >= 5:
                 self.__y = args[4]
-    #     else:
-    #         for j in kwargs:
-    #             print(j, kwargs[j])
+        else:
+            for j in kwargs:
+                if j == "id":
+                    self.id = kwargs[j]
+                if j == "height":
+                    self.__height = kwargs[j]
+                if j == "width":
+                    self.__width = kwargs[j]
+                if j == "x":
+                    self.__x = kwargs[j]
+                if j == "y":
+                    self.__y = kwargs[j]
