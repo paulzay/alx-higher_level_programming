@@ -75,14 +75,18 @@ class Rectangle(Base):
         """calculate area"""
         return self.__height * self.__width
 
-    # def display(self):
-    #     """display with #"""
-    #     if self.__width != 0 and self.__height != 0:
-    #         return ""
-    #     s = ""
-    #     for _ in range(self.__height):
-    #         s += "#" * self.__width + "\n"
-    #     return s.rstrip()
+    def display(self):
+        """display with #"""
+        if self.width == 0 or self.height == 0:
+            print("")
+            return
+
+        [print("") for i in range(self.__y)]
+
+        for j in range(self.__height):
+            [print(" ", end="") for k in range(self.__x)]
+            [print("#", end="") for l in range(self.__width)]
+            print("")
 
     def __str__(self):
         """representation"""
