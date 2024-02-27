@@ -84,8 +84,8 @@ class Rectangle(Base):
         [print("") for i in range(self.__y)]
 
         for j in range(self.__height):
-            [print(" ", end="") for k in range(self.__x)]
-            [print("#", end="") for l in range(self.__width)]
+            [print(" ", end="") for kx in range(self.__x)]
+            [print("#", end="") for lwidth in range(self.__width)]
             print("")
 
     def __str__(self):
