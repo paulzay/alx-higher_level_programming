@@ -20,7 +20,8 @@ class Square(Rectangle):
         """setter for size"""
         self.width = value
         self.height = value
-    
+
     def __str__(self):
         """print"""
-        return "[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y, self.height)
+        return "[Square] ({}) {}/{} - {}"\
+            .format(self.id, self.x, self.y, self.height)
