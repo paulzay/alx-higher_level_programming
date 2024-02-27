@@ -15,17 +15,25 @@ class Base:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
 
+    @staticmethod
     def to_json_string(list_dictionaries):
-        pass
+        """to json"""
+        if list_dictionaries is None or list_dictionaries == []:
+            return "[]"
+        return json.dumps(list_dictionaries)
 
     def save_to_file(cls, list_objs):
+        """save to file"""
         pass
 
     def from_json_string(json_string):
+        """from json"""
         pass
 
     def create(cls, **dictionary):
+        """create"""
         pass
 
     def load_from_file(cls):
+        """load from file"""
         pass
