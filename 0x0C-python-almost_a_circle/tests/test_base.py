@@ -11,5 +11,9 @@ class BaseTest(unittest.TestCase):
         self.assertEqual(obj1.id, 1)
         self.assertEqual(obj2.id, 2)
 
+    def test_id_is_not_none(self):
+        obj = Base(5)
+        self.assertEqual(obj.id, 5)
+
 if __name__ == '__main__':
     unittest.main()
