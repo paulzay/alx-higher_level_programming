@@ -7,9 +7,20 @@ from models.rectangle import Rectangle
 class Square(Rectangle):
     """square class"""
     def __init__(self, size, x=0, y=0, id=None):
-        super().__init__(id, x, y, width, height)
-        self.width = size
-        self.height = size
+        """initialize data"""
+        super().__init__(size, size, id, x, y)
 
+    @property
+    def size(self):
+        """get size"""
+        return self.height
+
+    @size.setter
+    def size(self, value):
+        """setter for size"""
+        self.width = value
+        self.height = value
+    
     def __str__(self):
-        pass
+        """print"""
+        return "[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y, self.height)
