@@ -84,10 +84,10 @@ class Rectangle(Base):
     #         s += "#" * self.__width + "\n"
     #     return s.rstrip()
 
-    # def __str__(self):
-    #     """representation"""
-    #     return "[Rectangle] {:d}/{:d} - {:d}/{:d} \
-    #         ".format(self.__x, self.__y, self.__width, self.__height)
+    def __str__(self):
+        """representation"""
+        return "[Rectangle] {:d}/{:d} - {:d}/{:d} \
+            ".format(self.__x, self.__y, self.__width, self.__height)
 
     # def update(self, *args, **kwargs):
     #     """update function"""
