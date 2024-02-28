@@ -120,6 +120,7 @@ class Rectangle(Base):
                     self.__y = kwargs[j]
 
     def to_dictionary(self):
+        """to json"""
         return {
                 "id": self.id, "width": self.__width,
                 "height": self.__height,
