@@ -30,7 +30,7 @@ class Base:
     def from_json_string(json_string):
         """from json"""
         if json_string is None:
-            return "[]"
+            return []
         return json.loads(json_string)
 
     # def create(cls, **dictionary):
