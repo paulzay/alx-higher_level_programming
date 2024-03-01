@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 import json
+
 """define class"""
 
 
@@ -23,18 +24,18 @@ class Base:
             return "[]"
         return json.dumps(list_dictionaries)
 
-    def save_to_file(cls, list_objs):
-        """save to file"""
-        pass
+    # def save_to_file(cls, list_objs):
+    #     """save to file"""
+    #     pass
 
     def from_json_string(json_string):
         """from json"""
         return json.loads(json_string)
 
-    def create(cls, **dictionary):
-        """create"""
-        pass
+    # def create(cls, **dictionary):
+    #     """create"""
+    #     pass
 
-    def load_from_file(cls):
-        """load from file"""
-        pass
+    # def load_from_file(cls):
+    #     """load from file"""
+    #     pass
