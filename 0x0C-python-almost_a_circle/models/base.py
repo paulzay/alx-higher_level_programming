@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+import json
 """define class"""
 
 
@@ -28,7 +29,7 @@ class Base:
 
     def from_json_string(json_string):
         """from json"""
-        pass
+        return json.loads(json_string)
 
     def create(cls, **dictionary):
         """create"""
