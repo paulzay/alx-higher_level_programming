@@ -1,2 +1,5 @@
 -- create table in current db
-SHOW TABLES WHERE DATABASE ?;
+CREATE TABLE first_table(
+	id int,
+	name varchar(256)
+);
