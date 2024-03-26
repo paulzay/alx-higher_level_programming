@@ -23,20 +23,24 @@ class Base:
             return "[]"
         return json.dumps(list_dictionaries)
 
-    # def save_to_file(cls, list_objs):
-    #     """save to file"""
-    #     pass
+    @classmethod
+    def save_to_file(cls, list_objs):
+        """save to file"""
+        pass
 
+    @staticmethod
     def from_json_string(json_string):
         """from json"""
         if json_string is None:
             return []
         return json.loads(json_string)
 
-    # def create(cls, **dictionary):
-    #     """create"""
-    #     pass
+    @classmethod
+    def create(cls, **dictionary):
+        """create"""
+        pass
 
-    # def load_from_file(cls):
-    #     """load from file"""
-    #     pass
+    @classmethod
+    def load_from_file(cls):
+        """load from file"""
+        pass
