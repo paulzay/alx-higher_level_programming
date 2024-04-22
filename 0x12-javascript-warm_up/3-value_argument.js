@@ -2,9 +2,9 @@
 
 const { argv } = require('node:process');
 
-if (argv.length == 1) {
+if (argv.length <= 2) {
   console.log('No argument');
 } else {
-  const arg1 = argv[1];
+  const arg1 = argv[2];
   console.log(arg1);
 }
