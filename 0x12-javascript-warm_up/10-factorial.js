@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-function factorial(arg) {
+function factorial (arg) {
   if (!arg) return 1;
   return arg * factorial(arg - 1);
 }
