@@ -6,9 +6,7 @@ class Square extends Sq {
   charPrint(c) {
     for (let i = 0; i < this.height; i++) {
       const row = '';
-      for (let j = 0; j < this.width; j++) {
-        c != undefined ? row += 'X' : row += c;
-      }
+      for (let j = 0; j < this.width; j++) row += c || 'X';
       console.log(row);
     }
   }
