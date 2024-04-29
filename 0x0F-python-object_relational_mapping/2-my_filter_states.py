@@ -11,9 +11,8 @@ def main():
                          user=argv[1], passwd=argv[2],
                          db=argv[3])
     cur = db.cursor()
-    cur.execute("SELECT * FROM states WHERE \
-        name=argv[4] ORDER BY states.id ASC")
-
+    cur.execute("SELECT * FROM states WHERE name LIKE BINARY '{}'\
+                ORDER BY states.id ASC".format(sys.argv[4]))
     rows = cur.fetchall()
     for row in rows:
         print(row)
