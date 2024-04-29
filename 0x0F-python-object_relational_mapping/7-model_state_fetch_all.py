@@ -9,7 +9,7 @@ Base = declarative_base()
 def main():
     argv = sys.argv
     engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'.format(
-        argv[0], argv[2], argv[3]), pool_pre_ping=True)
+        argv[1], argv[2], argv[3]), pool_pre_ping=True)
     Base.metadata.create_all(engine)
 
     session = Session(engine)
