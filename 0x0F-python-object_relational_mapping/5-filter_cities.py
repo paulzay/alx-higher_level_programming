@@ -12,9 +12,8 @@ def main():
                          db=argv[3])
     cur = db.cursor()
     cur.execute("SELECT cities.name FROM cities WHERE name=%s\
-            INNER JOIN states ON cities.states.id = states.id"format(argv[4]))
+            LEFT JOIN states ON cities.states.id = states.id".format(argv[4]))
     rows = cur.fetchall()
-
     print(", ".join([row[0] for row in rows]))
 
 
