@@ -11,7 +11,7 @@ def main():
                          user=argv[1], passwd=argv[2],
                          db=argv[3])
     cur = db.cursor()
-    cur.execute("SELECT * FROM states WHERE name=argv[4]")
+    cur.execute("SELECT * FROM states WHERE name=argv[4] ORDER BY states.id ASC")
 
     rows = cur.fetchall()
     for row in rows:
