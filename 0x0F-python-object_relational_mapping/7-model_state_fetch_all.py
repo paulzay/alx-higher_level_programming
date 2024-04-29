@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+"""comment"""
 from sqlalchemy import engine
 import sys
 from sqlalchemy.ext.declarative import declarative_base
