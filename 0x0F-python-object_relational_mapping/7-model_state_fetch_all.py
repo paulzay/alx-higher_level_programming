@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """comment"""
 from sqlalchemy import engine
+from sqlalchemy.orm import Session
 import sys
 from sqlalchemy.ext.declarative import declarative_base
 Base = declarative_base()
