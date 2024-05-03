@@ -4,6 +4,7 @@
 from sqlalchemy import engine
 import sys
 from model_state import Base, State
+from sqlalchemy.orm import Session
 
 
 def main():
