@@ -1,3 +1,3 @@
 #!/bin/bash
-#  cURL POST parameters
-curl -s "$1" -X POST -d "email=hr@holbertonschool.com" -d "subject=I will always be here for PLD"
+#  cURL POST parametes
+curl -s "$1" -X POST -d "test@gmail.com" -d "subject=I will always be here for PLD"
