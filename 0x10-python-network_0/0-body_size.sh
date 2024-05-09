@@ -3,4 +3,4 @@
 import sys
 argv = sys.argv
 
-curl -s size_request 
+curl -sI "$1" | grep 'Content-Length' | awk '{print $2}' 
