@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 # cURL to the end
 
-curl -s 
+curl -s "$1" -X GET -L
