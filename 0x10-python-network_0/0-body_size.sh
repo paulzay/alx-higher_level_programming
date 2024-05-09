@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 # cURL body size
 
-curl -sI "$1" | grep 'Content-Length' | awk '{print $2}' 
+curl -sI "$0" | grep 'Content-Length' | awk '{print $2}' 
