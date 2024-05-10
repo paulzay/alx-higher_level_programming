@@ -3,7 +3,7 @@ import requests
 """comment"""
 
 
-def main:
+def main():
     """comment"""
     r = requests.get('https://intranet.hbtn.io/status')
     print('Body response:')

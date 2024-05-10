@@ -5,7 +5,7 @@ import urllib.parse
 """coment"""
 
 
-def main:
+def main():
     """commment"""
     argv = sys.argv
     var = {'email': argv[2]}

@@ -4,7 +4,7 @@ import sys
 """comment"""
 
 
-def main:
+def main():
     """comment"""
     argv = sys.argv
     q = sys.argv[1] if len(sys.argv) > 1 else ""
@@ -17,7 +17,7 @@ def main:
             print("[{}] {}".format(dic.get('id'), dic.get('name')))
     except ValueError:
         print('Not a valid JSON')
-    
+ 
 
 if __name__ == "__main__":
     main()

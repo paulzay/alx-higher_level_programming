@@ -4,7 +4,7 @@ import sys
 """commment"""
 
 
-def main:
+def main():
     """comment"""
     argv = sys.argv
     r = requests.post(argv[1], data={'email': argv[2]})

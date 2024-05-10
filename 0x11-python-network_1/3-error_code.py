@@ -5,7 +5,7 @@ from urllib.error import HTTPError
 """comment"""
 
 
-def main:
+def main():
     """comment"""
     argv = sys.argv
     try:

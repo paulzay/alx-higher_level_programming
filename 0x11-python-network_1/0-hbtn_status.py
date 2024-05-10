@@ -3,7 +3,7 @@ import urllib
 """comment"""
 
 
-def main:
+def main():
     """comment"""
     req = urllib.request.Request('https://alx-intranet.hbtn.io/status')
     with urllib.request.urlopen(req) as response:

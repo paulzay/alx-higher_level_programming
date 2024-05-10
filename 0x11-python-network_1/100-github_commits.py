@@ -4,7 +4,7 @@ import sys
 """comment"""
 
 
-def main:
+def main():
     """main"""
     argv= sys.argv
     r = requests.get('https://api.github.com/repos/{}/{}/commits'

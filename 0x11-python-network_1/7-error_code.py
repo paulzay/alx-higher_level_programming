@@ -4,7 +4,7 @@ import requests
 """comment"""
 
 
-def main:
+def main():
     """comment"""
     argv = sys.argv
     res = requests.get(argv[1])

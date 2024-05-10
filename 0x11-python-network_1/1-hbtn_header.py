@@ -4,7 +4,7 @@ import sys
 """urllib header"""
 
 
-def main:
+def main():
     """comment"""
     arg = sys.argv
     with urllib.request.urlopen(arg[1]) as response:
