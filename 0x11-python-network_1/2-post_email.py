@@ -1,8 +1,8 @@
 #!/usr/bin/python3
+"""coment"""
 import urllib.request
 import sys
 import urllib.parse
-"""coment"""
 
 
 def main():

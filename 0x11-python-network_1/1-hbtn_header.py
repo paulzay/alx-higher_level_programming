@@ -1,7 +1,7 @@
 #!/usr/bin/python3
+"""urllib header"""
 import urllib.request
 import sys
-"""urllib header"""
 
 
 def main():

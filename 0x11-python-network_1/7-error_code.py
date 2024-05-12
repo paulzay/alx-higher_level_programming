@@ -1,7 +1,7 @@
 #!/usr/bin/python3
+"""comment"""
 import sys
 import requests
-"""comment"""
 
 
 def main():

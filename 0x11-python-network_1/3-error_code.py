@@ -1,8 +1,8 @@
 #!/usr/bin/python3
+"""comment"""
 import sys
 import urllib.request
 from urllib.error import HTTPError
-"""comment"""
 
 
 def main():

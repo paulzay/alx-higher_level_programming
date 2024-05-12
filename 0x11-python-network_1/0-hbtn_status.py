@@ -1,6 +1,6 @@
 #!/usr/bin/python3
+"""documentation"""
 import urllib
-"""comment"""
 
 
 def main():
