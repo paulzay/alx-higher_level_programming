@@ -9,9 +9,9 @@ def main():
     """commment"""
     argv = sys.argv
     var = {'email': argv[2]}
-    data = urllib.parse.urlencode(value)
+    data = urllib.parse.urlencode(var)
     data = data.encode('ascii')
-    req = urllib.request.Request(sys.argv[1], data)
+    req = urllib.request.Request(argv[1], data)
     with urllib.request.urlopen(req) as response:
         print(response.read().decode('utf-8', 'replace'))
 
