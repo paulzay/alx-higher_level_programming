@@ -4,10 +4,10 @@ import requests
 import sys
 
 
-def main():
+if __name__ == "__main__":
     """comment"""
     argv = sys.argv
-    q = sys.argv[1] if len(sys.argv) > 1 else ""
+    q = argv[1] if len(argv) > 1 else ""
     req = requests.post('http://0.0.0.0:5000/search_user', data={'q': q})
     try:
         dic = r.json()
@@ -17,7 +17,3 @@ def main():
             print("[{}] {}".format(dic.get('id'), dic.get('name')))
     except ValueError:
         print('Not a valid JSON')
- 
-
-if __name__ == "__main__":
-    main()
