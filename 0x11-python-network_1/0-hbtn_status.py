@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """documentation"""
-import urllib
+import urllib.request
 
 
 def main():
