@@ -16,5 +16,5 @@ def main():
             print("{}: {}".format(com.get('sha'),com.get('commit').get('author').get('name')))
 
 
-    if __name__ == "__main__":
+if __name__ == "__main__":
         main()
