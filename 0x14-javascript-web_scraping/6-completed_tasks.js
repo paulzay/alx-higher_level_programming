@@ -10,16 +10,16 @@ request(argv[2], function (error, response, body) {
   }
 
   const dict = JSON.parse(body).reduce((acc, elem) => {
-  	if (!acc[elem.userId]) {
-  		if (elem.completed) {
-  			acc[elem.userId] = 1;
-  		}
-  	} else {
-  		if (elem.completed) {
-  			acc[elem.userId] += 1;
-  		}
-  	}
-  	return acc;
+    if (!acc[elem.userId]) {
+      if (elem.completed) {
+        acc[elem.userId] = 1;
+      }
+    } else {
+      if (elem.completed) {
+        acc[elem.userId] += 1;
+      }
+    }
+    return acc;
   }, {});
   console.log(dict);
 });
