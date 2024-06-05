@@ -3,9 +3,9 @@
 const request = require('request');
 const { argv } = require('node:process');
 
-request(argv[2], function (error, response) {
+request(`https://swapi-api.alx-tools.com/api/films/${argv[2]}`, function (error, response, body) {
   if (error) {
     console.error(error);
   }
-  console.log('code:', response && response.statusCode);
+  console.log(JSON.parse(body).title);
 });
